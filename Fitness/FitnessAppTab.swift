@@ -1,16 +1,18 @@
-//
-//  FitnessAppTab.swift
-//  Fitness
-//
-//  Created by Charles on 8/13/26.
-//
-
 import SwiftUI
 
 struct FitnessAppTab: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        TabView {
+            Tab("Home", systemImage: "house.fill") {
+                HomeView()
+            }
+            Tab("Workoutl", systemImage: "dumbbell.fill") {
+                Text("Text")
+            }
+            Tab("Profile", systemImage: "person.crop.circle") {
+                Text("Profile")
+            }
+        }    }
 }
 
 #Preview {

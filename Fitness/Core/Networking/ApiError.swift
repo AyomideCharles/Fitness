@@ -1,8 +1,6 @@
-//
-//  ApiError.swift
-//  Fitness
-//
-//  Created by Charles on 8/13/26.
-//
-
 import Foundation
+
+enum ApiError: Error {
+    case invalidURL
+    case decodingFailed
+}
